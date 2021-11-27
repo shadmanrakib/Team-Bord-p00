@@ -11,6 +11,47 @@ P00: Login Page
 
    <head>
      <title> LOGIN PAGE </title>
+     <style>
+       * {
+         background: #f2f2f2;
+         font-size: 16px;
+       }
+       body {
+         display: flex;
+         flex-direction: column;
+         align-items: center;
+       }
+       h1 {
+         font-size: small;
+       }
+       #message {
+         color: red;
+         font-size: x-large;
+         width: 100%;
+         background-color: lightpink;
+       }
+       input[type="text"], input[type="password"] {
+         background-color: white;
+         border-radius: 6px;
+         border: 2px solid #e5e5e5;
+         padding: 8px;
+       }
+       input[type="submit"], button {
+         background-color: blue;
+         color: white;
+         border-radius: 12px;
+         border: none;
+         padding: 8px;
+       }
+       form {
+         padding: 10px;
+         display: flex;
+         width: 100%;
+         max-width: 400px;
+         flex-direction: column;
+         align-items: stretch;
+       }
+     </style>
    </head>
 
    <body>
@@ -19,7 +60,7 @@ P00: Login Page
        <br>
        Team Bord: Austin Ngan (Gerald), Thomas Yu (Perry), Mark Zhu (Bob the Third Jr), Roshani Shrestha (Pete)
        <br>
-       {{message}}
+       <div id="message">{{message}}</div>
      </h1>
 
      <h3>
